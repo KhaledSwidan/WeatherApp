@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Day #10 - Weather App | AsmrProg</title>
+    <title>Weather App</title>
   </head>
 
   <body>
@@ -20,30 +20,47 @@
       </div>
 
       <div class="not-found">
-        <img src="images/404.png" />
+        <img src="404.png" />
+        <p class="error"></p>
         <p>Oops! Invalid location :/</p>
       </div>
 
       <div class="weather-box">
-        <img src="" />
+        <h1 class="country"></h1>
+        <h3 class="region"></h3>
         <p class="temperature"></p>
-        <p class="description"></p>
+        <div class="description">
+          <img class="icon" src="" alt="" style="margin-top: 0" />
+          <p class="text"></p>
+        </div>
       </div>
 
       <div class="weather-details">
-        <div class="humidity">
-          <i class="fa-solid fa-water"></i>
-          <div class="text">
-            <span></span>
-            <p>Humidity</p>
+        <div
+          style="
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+          ">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+              <span></span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span></span>
+              <p>Wind Speed</p>
+            </div>
           </div>
         </div>
-        <div class="wind">
-          <i class="fa-solid fa-wind"></i>
-          <div class="text">
-            <span></span>
-            <p>Wind Speed</p>
-          </div>
+        <div class="lastUpdate-section">
+          <p>Last Update:</p>
+          <span class="lastUpdate"></span>
         </div>
       </div>
     </div>

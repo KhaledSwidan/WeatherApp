@@ -5,71 +5,54 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 search.addEventListener("click", () => {
-  const APIKey = "07ab8bbd34797a34e35b3fd1d99b493e";
+  const APIKey = "bdbf12ffb35e452681e170138233006";
   const city = document.querySelector(".search-box input").value;
 
   if (city === "") return;
 
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
+    `http://api.weatherapi.com/v1/current.json?key=${APIKey}&q=${city}&aqi=no`
   )
     .then((response) => response.json())
-    .then((json) => {
-      if (json.cod === "404") {
-        container.style.height = "400px";
+    .then((data) => {
+      console.log(data);
+
+      if (data.error) {
+        const error = document.querySelector(".error");
+        container.style.height = "fit-content";
         weatherBox.style.display = "none";
         weatherDetails.style.display = "none";
         error404.style.display = "block";
         error404.classList.add("fadeIn");
+        error.innerHTML = data.error.message;
         return;
       }
-
 
       error404.style.display = "none";
       error404.classList.remove("fadeIn");
 
-      const image = document.querySelector(".weather-box img");
-      const temperature = document.querySelector(".weather-box .temperature");
-      const description = document.querySelector(".weather-box .description");
-      const humidity = document.querySelector(
-        ".weather-details .humidity span"
-      );
-      const wind = document.querySelector(".weather-details .wind span");
+      const temperature = document.querySelector(".temperature");
+      const icon = document.querySelector(".icon");
+      const text = document.querySelector(".text");
+      const country = document.querySelector(".country");
+      const region = document.querySelector(".region");
+      const lastUpdate = document.querySelector(".lastUpdate");
+      const humidity = document.querySelector(".humidity .text span");
+      const wind = document.querySelector(".wind .text span");
 
-      switch (json.weather[0].main) {
-        case "Clear":
-          image.src = "images/clear.png";
-          break;
-
-        case "Rain":
-          image.src = "images/rain.png";
-          break;
-
-        case "Snow":
-          image.src = "images/snow.png";
-          break;
-
-        case "Clouds":
-          image.src = "images/cloud.png";
-          break;
-
-        case "Haze":
-          image.src = "images/mist.png";
-          break;
-
-        default:
-          image.src = "";
-      }
-
-      temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
-      description.innerHTML = `${json.weather[0].description}`;
-      humidity.innerHTML = `${json.main.humidity}%`;
-      wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+      country.innerHTML = data.location.country;
+      region.innerHTML = data.location.region;
+      temperature.innerHTML = `${data.current.temp_c}<span>°C</span>`;
+      icon.setAttribute("src", `https:${data.current.condition.icon}`);
+      text.innerHTML = data.current.condition.text;
+      lastUpdate.innerHTML = data.current.last_updated;
+      humidity.innerHTML = `${data.current.humidity}`;
+      wind.innerHTML = `${data.current.wind_kph}<span>kph</span>`;
 
       weatherBox.style.display = "";
       weatherDetails.style.display = "";
       weatherBox.classList.add("fadeIn");
       weatherDetails.classList.add("fadeIn");
-      container.style.height = "590px";
+      container.style.height = "fit-content";
     });
 });
