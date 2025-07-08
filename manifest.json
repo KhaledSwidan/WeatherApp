@@ -1,0 +1,59 @@
+{
+  "name": "تطبيق الطقس المحترف",
+  "short_name": "طقس",
+  "description": "تطبيق طقس حديث ومتجاوب باللغة العربية",
+  "version": "1.2.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#667eea",
+  "background_color": "#f7fafc",
+  "lang": "ar",
+  "dir": "rtl",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik05NiA0OEM4MS4yIDQ4IDY5LjMzMzMgNTkuODY2NyA2OS4zMzMzIDc0LjY2NjdDNjkuMzMzMyA4OS40NjY3IDgxLjIgMTAxLjMzMyA5NiAxMDEuMzMzQzExMC44IDEwMS4zMzMgMTIyLjY2NyA4OS40NjY3IDEyMi42NjcgNzQuNjY2N0MxMjIuNjY3IDU5Ljg2NjcgMTEwLjggNDggOTYgNDhaIiBmaWxsPSIjRkZENzAwIi8+CjxwYXRoIGQ9Ik05NiAxMjhDNzQuNjY2NyAxMjggNTcuMzMzMyAxNDUuMzMzIDU3LjMzMzMgMTY2LjY2N0M1Ny4zMzMzIDE4OCA3NC42NjY3IDIwNS4zMzMgOTYgMjA1LjMzM0MxMTcuMzMzIDIwNS4zMzMgMTM0LjY2NyAxODggMTM0LjY2NyAxNjYuNjY3QzEzNC42NjcgMTQ1LjMzMyAxMTcuMzMzIDEyOCA5NiAxMjhaIiBmaWxsPSIjNzRCOUZGIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSIxOTIiIHkyPSIxOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2N0VFQSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3NjRCQTIiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0yNTYgMTI4QzIxNi41MzMgMTI4IDE4NC44ODkgMTU5LjY0NCAxODQuODg5IDIwMEMxODQuODg5IDI0MC4zNTYgMjE2LjUzMyAyNzIgMjU2IDI3MkMyOTUuNDY3IDI3MiAzMjcuMTExIDI0MC4zNTYgMzI3LjExMSAyMDBDMzI3LjExMSAxNTkuNjQ0IDI5NS40NjcgMTI4IDI1NiAxMjhaIiBmaWxsPSIjRkZENzAwIi8+CjxwYXRoIGQ9Ik0yNTYgMzQyLjIyMkMxOTkuMTExIDM0Mi4yMjIgMTUzLjc3OCAzODcuNTU2IDE1My43NzggNDQ0LjQ0NEMxNTMuNzc4IDUwMS4zMzMgMTk5LjExMSA1NDYuNjY3IDI1NiA1NDYuNjY3QzMxMi44ODkgNTQ2LjY2NyAzNTguMjIyIDUwMS4zMzMgMzU4LjIyMiA0NDQuNDQ0QzM1OC4yMjIgMzg3LjU1NiAzMTIuODg5IDM0Mi4yMjIgMjU2IDM0Mi4yMjJaIiBmaWxsPSIjNzRCOUZGIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI1MTIiIHkyPSI1MTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2N0VFQSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3NjRCQTIiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["weather", "utilities", "productivity"],
+  "screenshots": [
+    {
+      "src": "screenshot.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "تطبيق الطقس - الشاشة الرئيسية"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "البحث السريع",
+      "short_name": "بحث",
+      "description": "البحث عن طقس مدينة",
+      "url": "/?action=search",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiM2NjdFRUEiLz4KPHBhdGggZD0iTTQ4IDI0QzM2IDI0IDI2IDM0IDI2IDQ2QzI2IDU4IDM2IDY4IDQ4IDY4QzYwIDY4IDcwIDU4IDcwIDQ2QzcwIDM0IDYwIDI0IDQ4IDI0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "iarc_rating_id": "",
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
